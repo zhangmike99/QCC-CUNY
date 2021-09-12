@@ -1,0 +1,10 @@
+<html>
+	<head>
+		<title>Lab 1 Starter</title>
+	</head>
+
+	<body>
+	</body>
+
+
+</html>
