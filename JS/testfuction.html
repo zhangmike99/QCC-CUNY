@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<form name="alertform">
+name:
+<input type="text" name="yourname">
+<input type="button" value="Go"
+onClick="windows.alert.('Hello" +
+document.alertform.yourname.value);">
+</form>
+
+<script>
+c=confirm("Do you want to continue?")
+if(c)
+{
+alert("walk")
+}
+else
+{
+alert("stop")
+}
+
+function test(x){
+  x = 2*x;
+  console.log(x);  //displays: 2* whas the passed input
+}
+
+var x = 3;
+console.log(x);  //displays:3
+test(x);        // will display 6 inside test
+console.log(x); // displays:3(x was not mofiied)
+
+</script>
+
+
+
+</body>
+</html>
