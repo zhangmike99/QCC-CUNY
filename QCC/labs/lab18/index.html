@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+  <div id="sty2"><link rel="stylesheet" href="stylea.css"></div>
+
+	<title>LAB 18</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="lab18.js"></script>
+
+<style>
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    background-color: #f1f1f1;
+  }
+  li a{
+    display: inline;
+    float: left;
+    color: #000;
+    padding: 0px 16px;
+    text-decoration: none;
+  }
+  li a:hover{
+    background-color: #555;
+    color: white;
+  }
+</style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>MY SUPER DOOPER UPDATED UPDATED WEBSITE</h1>
+		<p>SOME OF MY BEST WORK!!!!!!!.</p>
+  </div>
+
+  <div class="topnav">
+    <a href="http://cnn.com">CNN</a>
+    <a href="http://w3schools.com">W3Schools</a>
+    <a href="http://edmodo.com">Edmodo</a>
+  </div>
+    <div >
+      <ul>
+        <li><a href="">page0</a></li>
+        <li><a href="">page1</a></li>
+        <li><a href="">page2</a></li>
+      </ul>
+    </div>
+  </div>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-camera"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+    <i class="glyphicon glyphicon-signal"></i>
+    <i class="glyphicon glyphicon-heart"></i>
+
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+    <i class="material-icons">fingerprint</i>
+    <i class="material-icons">airplane</i>
+
+      <button id="show" onclick="styChange()">CSS 2</button>
+      <button id="show" onclick="styChange1()">CSS 3</button>
+      <button id="show" onclick="styChange2()">CSS 4</button>
+      <button id="show" onclick="styChange3()">CSS</button>
+
+  <div class="row">
+    <div class="column">
+      <a href="gameChoice1/g1.html">
+        <h2>HTML</h2>
+      </a>
+      <p id="demo">Brief expl of what html is</p>
+    </div>
+    <div class="column">
+      <h2>CSS</h2>
+    <p>Enter Student </p>
+    <form name="listForm">
+      First Name:<input name="fn" type="text"></br>
+      Last Name:<input name="fn" type="text"></br>
+      DOB:<input name="fn" type="text"></br>
+      Eye Color:<input name="fn" type="text"></br>
+      Super Power:<input name="fn" type="text"></br>
+      </form>
+  <h4>These are my students</h4>
+  <p id="arraydemo"></p>
+  </div>
+   <div class="column">
+   <h2>Javascript</h2>
+   <p id="pop">Brief expl of what JS is</p>
+      <button id="change" onclick="change()">Click here to see JS in action</button>
+    </div>
+    </div>
+  </div>
+  <script>
+    //this will react to clicking the button
+  function change() {
+    /*write inside the element pop*/
+    document.getElementById('pop').innerHTML= "Hey Band!! How are you?";
+  }
+
+
+  function styChange() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1b.css");
+  }
+  function styChange1() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1c.css");
+  }
+  function styChange2() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1d.css");
+  }
+   function styChange3() {
+    document.getElementsByTagName("link")[0].setAttribute("href", "style1a.css");
+  }
+
+
+  document.addressform.yourname.value
+  document.addressform.phone.value
+  document.addressform.email.value
+
+  <form name="alertform">
+  Enter your name:
+  <input type="text" name="yourname">
+  <input type="button" value="Go" onClick="window.alert('Hello '+document.alertform.yourname.value);">
+  </form>

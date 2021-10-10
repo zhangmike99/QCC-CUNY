@@ -1,0 +1,60 @@
+var myFavroiteThings = ['Broccoli', 60481, 'Lover Actualy'];
+myFavroiteThings[0] = 'Celery Root';
+
+
+var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo']
+for (var i = 0; i < rainbowColors.length; i++) {
+	console.log(rainbowColors[i]);
+}
+
+var lizzieTheCat = {
+	age: 18,
+	furColor: "grey",
+	likes: ["catnip", "milk"],
+	birthday: {"month": 7, "day": 17, year: 1999}
+};
+
+var aboutMe= {
+	hometown: "Pasadena, CA",
+	hair: "brown"
+};
+
+var myHometown = aboutMe.hometown;
+
+var myCats = [
+	{name: "Lizzie",
+	age: 18},
+	{name: "Daemon",
+	age: 1}
+];
+
+for (var i = 0; i < myCats.length; i++) {
+	var myCat = myCats[i];
+	console.log(myCat.name + ' is ' + myCat.age + ' years old.');
+}
+
+
+var lizzieTheCat = {
+	age: 18,
+	furColor: 'grey',
+	meow: function() {
+		console.log('meowww');
+	},
+	eat: function(food) {
+		console.log('Yum, I love ' + food);
+	},
+	sleep: function(numMinutes) {
+	for (var i = 0; i < numMinutes; i++) {
+		console.log('z');
+	}
+    }
+};
+
+lizzieTheCat.meow();
+lizzieTheCat.eat('Brown mushy stuff');
+lizzieTheCat.sleep(10);
+
+
+
+create a ninja
+

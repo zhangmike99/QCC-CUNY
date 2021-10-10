@@ -1,0 +1,114 @@
+<html>
+<center>
+<head>
+<title>Lab 14</title>
+</head>
+<h1>Math - Comparison Operators</h1>
+<h2>Mike Zhang</h2>
+</center>
+
+<body>
+  <hr>
+  <br>
+<center>
+  <form name="formCalc">
+  <br>
+  <h3><span id="theResult"></span></h3>
+  <br>
+  x:
+  <input type="text" name="first" maxlength="4" size="4">
+  <br>
+  <br>
+  y:
+  <input type="text" name="second" maxlength="4" size="4">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="equal()"  Value="Is x equal to y">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="greater()"  Value=" Is x greater than y">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="less()"  Value="Is x less than y">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="greaterthanequal()"  Value="Is x greater than or equal to y">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="lessthanequal()"  Value="Is x less than or equal to y">
+  <br>
+  <br>
+  <input type="button" class="button" onClick="notequal()"  Value=" x not equal to y?">
+  </form> 
+</center>
+  <script>
+  
+  function equal(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne==numTwo){
+        theAns=("TRUE");
+      }
+      else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  }
+  function greater(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne>numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  }
+  function less(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne<numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  }
+  function greaterthanequal(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne>=numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  } 
+  function lessthanequal(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne<=numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  } 
+  function notequal(){
+    numOne=Number(document.formCalc.first.value);
+    numTwo=Number(document.formCalc.second.value);
+    if(numOne!=numTwo){
+        theAns=("TRUE");
+      }
+    else {
+        theAns=("FALSE");
+      }
+    document.getElementById("theResult").innerHTML=theAns;
+  } 
+  </script>
+</body>
+</html>
